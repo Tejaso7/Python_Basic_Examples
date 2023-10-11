@@ -4,22 +4,22 @@ from email.mime.text import MIMEText
 from email.mime.base import MIMEBase
 from email import encoders
 
-fromaddr = "mukundparve98@gmail.com"
-toaddr = "mukundparve@gmail.com"
+fromaddr = "tejusawant302@gmail.com"
+toaddr = "tejusawant307@gmail.com"
 
 msg = MIMEMultipart()
 msg['From'] = fromaddr
 msg['To'] = toaddr
 msg['Subject'] = "Interview Material"
 
-body = """Greetings from <b>Mukund Parve</b>,
+body = """Greetings from <b>Tejas Sawant</b>,
 <hr>
 Python 4th week presentation to prepare for Interview. <br>
-<a href="https://github.com/mukunddp"> Github link for codes</a>
+<a href="https://github.com/Tejaso7"> Github link for codes</a>
 <br>
 <hr>
 Regards,
-Mukund Parve
+Tejas Sawant
 """
 msg.attach(MIMEText(body, 'html'))
 
@@ -40,7 +40,7 @@ msg.attach(p)
 
 s = smtplib.SMTP('smtp.gmail.com', 587)
 s.starttls()
-s.login(fromaddr, "Mukundaaipapa")
+s.login(fromaddr, " tejusawant302")
 text = msg.as_string()
 s.sendmail(fromaddr, toaddr, text)
 
