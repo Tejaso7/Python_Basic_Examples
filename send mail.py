@@ -1,15 +1,15 @@
 import smtplib
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
-msg = '''Hello <b>Mukund</b>'''
-sender_address = 'mukundparve98@gmail.com'
+msg = '''Hello <b>Tejas</b>'''
+sender_address = 'tejusawant302@gmail.com'
 sender_pass = '**********'
-receiver_address = 'mukundparve@gmail.com'
+receiver_address = 'tejusawant@gmail.com'
 #Setup the MIME
 message = MIMEMultipart()
 message['From'] = sender_address
 message['To'] = receiver_address
-message['Cc'] = "mukundparve30@gmail.com"
+message['Cc'] = "tejusawant302@gmail.com"
 message['Subject'] = 'A test mail sent by Python. It has an attachment.'
 #The body and the attachments for the mail
 message.attach(MIMEText(msg, 'html'))
