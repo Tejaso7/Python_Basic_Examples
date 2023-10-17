@@ -1,6 +1,8 @@
 # bot at class entrance
 user = ["Tejas", "Ulkesh", "Suraj", "Samiksha", "Vaishnavi", "Avdhoot"]
-block = ["Sameer"]  #Sameer has refused admission so not allow them where Swapnil want to join but he is in confusion
+block = ["Sameer"] 
+
+#Sameer has refused admission so not allow them where Swapnil want to join but he is in confusion
 while True:
     name = input("enter your name : ")
     print("Hello", name)
